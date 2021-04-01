@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def home(request):
+    """
+    ホームページ用のView
+    """
+    return render(request, 'home.html')
